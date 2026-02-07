@@ -16,60 +16,58 @@ The project flow goes as follows:
 
 🔧 Design Constraints
 
-Load Capacitance (CL): 5 pF
-Power Consumption: < 0.5 mW
-Unity-Gain Bandwidth (UGB): > 10 MHz
-Slew Rate: ≥ 15 V/µs
-DC Gain: > 60 dB
-Phase Margin (PM): > 75°
+- Load Capacitance (CL): 5 pF
+- Power Consumption: < 0.5 mW
+- Unity-Gain Bandwidth (UGB): > 10 MHz
+- Slew Rate: ≥ 15 V/µs
+- DC Gain: > 60 dB
+- Phase Margin (PM): > 75°
 
 📊 Achieved Performance
 
-DC Gain: > 70 dB
-Unity-Gain Bandwidth: ~22 MHz
-Phase Margin: > 80° (≈86° worst-case)
-Slew Rate: ~13 V/µs
-Power Consumption: < 0.3 mW
-Strong low-frequency PSRR (~72 dB) and CMRR (> 70 dB)
+- DC Gain: > 70 dB
+- Unity-Gain Bandwidth: ~22 MHz
+- Phase Margin: > 80° (≈86° worst-case)
+- Slew Rate: ~13 V/µs
+- Power Consumption: < 0.3 mW
+- Strong low-frequency PSRR = ~72 dB and CMRR > 75 dB
 
  ## Calculating the DC parameter using Dc analysis of nmos and pmos (μpCox and μnCox)
 
 upcox = 60u , 
 uncox = 325u
 
-![betaeffctive](https://github.com/user-attachments/assets/173a8a26-fb37-4621-9ef3-be2dd1d0dc9e)
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/test_ckts/Vth.png)
 
 
 ## Calculating the min and max threshold value of m1 and m3 mos
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/test_ckts/test.png)
+**Vtpmin = Vtpmax = 500mV**
 
-Vtpmin = Vtpmax = 500mV ,
-Vtnmin = 450mV, Vtnmax = 550mV
+**Vtnmin = 450mV, Vtnmax = 550mV**
 
 ## Designing full circuit and make proper wire connection
 
-![nmos2stageSchematic](https://github.com/user-attachments/assets/14fdaabc-4ac1-4e3b-9520-b95aca139718)
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/Schematic/op_amp_with_Cc.png)
 
 
 ## Ac analysis ( Bode plot) 
-**DCGain=52dB , GBW = 39.21MHz and Phase Margin = 61.93 , Bandwidth=164kHz**
+**DCGain=73.89dB , GBW = 21.6MHz and Phase Margin > 85° , Bandwidth=164kHz**
 
-![nmos2stageacjpg](https://github.com/user-attachments/assets/3b06c168-f859-49b6-acd4-2d3f92ba032a)
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/simulation_outputs/gain_phaze.png)
 
+Adl Window
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/simulation_outputs/gain_phaze_adl.png)
 
-## Calculation of Slew Rate.
-
-![nmos2stageSR](https://github.com/user-attachments/assets/0c50c973-4d14-4114-a126-d7160c56de1a)
-
-
-from the wave output we get 𝗦𝗥 = 𝟯𝟯.𝟵 𝘃/𝘂𝘀𝗲𝗰 
-
+## Gain and Phaze plot without nulling resistor
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/simulation_outputs/gain_phaze_without_Rn.png)
 ## CMRR Plot
 
-![pmos2stage_cmrr](https://github.com/user-attachments/assets/958e63b6-099f-41cb-994f-03875ab1c4fc)
+![pmos2stage_cmrr](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/simulation_outputs/cmrr.png)
 
 
 ## PSRR Plot
-![pmos2stage_psrr2](https://github.com/user-attachments/assets/b7f85af2-b525-433d-aeff-f90810a1ac32)
+![pmos2stage_psrr2](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/simulation_outputs/psrr.png)
 
 
 
