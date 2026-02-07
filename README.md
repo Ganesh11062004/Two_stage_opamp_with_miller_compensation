@@ -1,7 +1,8 @@
 # Two_stage_opamp_with_miller_compensation
-..
+
 
 This project presents the design and optimization of a two-stage CMOS operational amplifier targeted for low-power, high-speed analog applications. The amplifier was designed to operate with a 5 pF capacitive load while meeting stringent performance constraints on power, stability, and bandwidth.
+**I used the UMC180nm technology for this project**
 
 
 The project flow goes as follows:
