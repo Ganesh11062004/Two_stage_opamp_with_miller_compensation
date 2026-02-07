@@ -76,6 +76,12 @@ Adl Window
 ![pmos2stage_psrr2](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/d6ce5ec575ba977f699ca368110c29a177deb796/simulation_outputs/psrr.png)
 
 
+## Functional Verification Using R-2R DAC
+
+To validate the operational amplifier in a practical signal-chain application, an R-2R ladder DAC was implemented and interfaced with the op-amp. The DAC output was buffered using the designed amplifier, and correct digital-to-analog conversion and output settling behavior were verified through transient simulations in Cadence Virtuoso.
+
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/fa3dae07891cde6e395b2b9b1bbb85920bd9a167/R2R_DAC_implementation/dac.png)
+![](https://github.com/Ganesh11062004/Two_stage_opamp_with_miller_compensation/blob/fa3dae07891cde6e395b2b9b1bbb85920bd9a167/R2R_DAC_implementation/op.png)
 
 
 
