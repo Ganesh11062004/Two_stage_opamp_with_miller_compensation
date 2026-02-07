@@ -32,6 +32,10 @@ The project flow goes as follows:
 - Power Consumption: < 0.3 mW
 - Strong low-frequency PSRR = ~72 dB and CMRR > 75 dB
 
+**Design Methodology**
+
+Conventional Miller compensation resulted in a phase margin of approximately 57° due to a right-half-plane zero. A nulling resistor was added in series with the Miller capacitor to shift the zero to the left-half plane, improving the phase margin to >80° without sacrificing bandwidth or power efficiency.
+
  ## Calculating the DC parameter using Dc analysis of nmos and pmos (μpCox and μnCox)
 
 upcox = 60u , 
