@@ -13,7 +13,7 @@ The project flow goes as follows:
 4. designing full circuit and make proper wire connection
 5. check all mosfet working region through DC analysis
 6. ploting bode plot through ac analysis
-7. checking all other parameter ( CMRR , slew rate , Noise , PSRR , Power dissipation )
+7. checking all other parameter ( CMRR , slew rate , PSRR , Power dissipation )
 
 
 🔧 Design Constraints
